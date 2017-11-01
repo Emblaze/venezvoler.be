@@ -1,0 +1,128 @@
+/* CSS Document */
+html {
+  height: 100%;
+ }
+body {
+	font-family: 'Raleway', sans-serif;
+  padding-top: 90px;
+  position: relative;
+  overflow-y: scroll;
+  height: 100%;
+}
+section > *[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -90px;
+  height: 90px;
+  visibility: hidden;
+}
+a {
+  color: #7f8fec;
+  background-color: #fffeee;
+  border: 3px;
+  border-color: #eee;
+}
+a:hover {
+	color: #fffeee;
+  background-color: #666;
+  text-decoration: none;
+}
+h5, h6 {
+	font-family: 'Give You Glory', cursive;
+}
+:active,
+.carousel-control.left, .carousel-control.right {
+   color: #7f8fec;
+   background-color: inherit;
+   background-image: none;
+   height: auto;
+}
+.btn-success {
+  background-color: #10B395;
+}
+.btn-success:hover {
+  background-color: #14E2BC;
+  border-color: #14E2BC;
+}
+.fa-facebook-square {
+    color: #3B5998;
+}
+.fa-google-plus-square, .fa-youtube-square {
+    color: red;
+}
+.fa-whatsapp {
+  color: #10B395;
+}
+.iframe {
+  border: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+.jumbotron {
+  background-color: #fffeee;
+  color: #333;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+  -moz-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+  box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+}
+.livredor {
+	font-family: 'Give You Glory', cursive;
+}
+.navbar {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+  -moz-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+  box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+}
+.navbar-default .navbar-brand {
+    color: rgba(102, 102, 102, 1);
+}
+.navbar-default {
+    font-size: 14px;
+    background-color: rgba(255, 254, 238, 1);
+    border-bottom-width: 1px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(255, 254, 238, 1);
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(238, 239, 255, 1);
+    background-color: rgba(158, 172, 251, 1);
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(238, 239, 255, 1);
+    background-color: rgba(127, 143, 236, 1);
+}
+.navbar-default .navbar-toggle {
+    border-color: #7f8fec;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #7f8fec;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #7f8fec;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #fffeee;
+}
+.tooltip {
+  font-family: 'Raleway', sans-serif;
+}
+.tooltip .tooltip-inner {
+  color: #ffffff;
+  background-color: #666;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-top-color: #666;
+}
+.well {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+  -moz-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+  box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+  background-color: #fffeee;
+}
