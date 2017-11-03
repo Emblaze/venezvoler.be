@@ -12,8 +12,8 @@ body {
 section > *[id]:before {
   display: block;
   content: " ";
-  margin-top: -90px;
-  height: 90px;
+  margin-top: -70px;
+  height: 70px;
   visibility: hidden;
 }
 a {
@@ -24,13 +24,12 @@ a {
 }
 a:hover {
 	color: #fffeee;
-  background-color: #666;
+  background-color: #7f8fec;
   text-decoration: none;
 }
 h5, h6 {
 	font-family: 'Give You Glory', cursive;
 }
-:active,
 .carousel-control.left, .carousel-control.right {
    color: #7f8fec;
    background-color: inherit;
