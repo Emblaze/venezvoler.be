@@ -3,11 +3,12 @@ html {
   height: 100%;
  }
 body {
+  color: #777;
 	font-family: 'Raleway', sans-serif;
+  height: 100%;
+  overflow-y: scroll;
   padding-top: 90px;
   position: relative;
-  overflow-y: scroll;
-  height: 100%;
 }
 section > *[id]:before {
   display: block;
@@ -52,41 +53,41 @@ h5, h6 {
 .fa-whatsapp {
   color: #10B395;
 }
-.iframe {
+iframe {
   border: 0;
   background-color: transparent;
   overflow: hidden;
 }
 .jumbotron {
   background-color: #fffeee;
-  color: #333;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
-  -moz-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
-  box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+  color: #777;
+  -webkit-box-shadow: 0 3px 6px 0 #b0b0b0;
+  -moz-box-shadow: 0 3px 6px 0 #b0b0b0;
+  box-shadow: 0 3px 6px 0 #b0b0b0;
 }
 .livredor {
 	font-family: 'Give You Glory', cursive;
 }
 .navbar {
-  -webkit-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
-  -moz-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
-  box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
+  -webkit-box-shadow: 0 3px 6px 0 #b0b0b0;
+  -moz-box-shadow: 0 3px 6px 0 #b0b0b0;
+  box-shadow: 0 3px 6px 0 #b0b0b0;
 }
 .navbar-default .navbar-brand {
-    color: rgba(102, 102, 102, 1);
+    color: #666;
 }
 .navbar-default {
     font-size: 14px;
-    background-color: rgba(255, 254, 238, 1);
+    background-color: #fffeee;
     border-bottom-width: 1px;
 }
 .navbar-default .navbar-nav>li>a {
-    color: rgba(51, 51, 51, 1);
-    background-color: rgba(255, 254, 238, 1);
+    color: #777;
+    background-color: #fffeee;
 }
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: rgba(238, 239, 255, 1);
+    color: #fffeee;
     background-color: rgba(158, 172, 251, 1);
 }
 .navbar-default .navbar-nav>.active>a,
@@ -96,7 +97,7 @@ h5, h6 {
     background-color: rgba(127, 143, 236, 1);
 }
 .navbar-default .navbar-toggle {
-    border-color: #666;
+    border-color: #777;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -109,19 +110,79 @@ h5, h6 {
 .navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #fffeee;
 }
+.parallax1 {
+    /* The image used: 1600x1200*/
+    background-image: url("../media/Izana-4.jpg");
+
+    /* Set a specific height */
+    height: 640px;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .tooltip {
   font-family: 'Raleway', sans-serif;
 }
 .tooltip .tooltip-inner {
   color: #ffffff;
-  background-color: #666;
+  background-color: #777;
 }
 .tooltip.bottom .tooltip-arrow {
-  border-top-color: #666;
+  border-top-color: #777;
 }
 .well {
   -webkit-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
   -moz-box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
   box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
   background-color: #fffeee;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+   .parallax1,.parallax2 {
+       background-attachment: scroll;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain;
+       max-height: 320px;
+       min-height: 240px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
 }
