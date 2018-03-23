@@ -58,6 +58,10 @@ iframe {
   background-color: transparent;
   overflow: hidden;
 }
+iframe.briefing {
+  height: 320px;
+  width: 100%
+}
 .jumbotron {
   background-color: #fffeee;
   color: #777;
