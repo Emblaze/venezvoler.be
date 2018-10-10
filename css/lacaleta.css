@@ -162,6 +162,10 @@ iframe.briefing {
   box-shadow: 0 3px 6px 0 rgba(176,176,176,0.82);
   background-color: #fffeee;
 }
+#windfinder {
+  max-width: 871px;
+  max-height: 471px;
+}
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
    .parallax1,.parallax2 {
