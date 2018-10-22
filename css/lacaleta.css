@@ -167,6 +167,7 @@ iframe.briefing {
   max-height: 471px;
 }
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+/* https://getbootstrap.com/docs/3.3/css/#grid-media-queries */
 @media only screen and (max-device-width: 1024px) {
    .parallax1,.parallax2 {
        background-attachment: scroll;
